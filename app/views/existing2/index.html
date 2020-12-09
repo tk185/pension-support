@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        AA121111A
+      </h1>
+      <h3 class="govuk-heading-m">
+        Print and send a forecast
+      </h3>
+
+      <p>
+        Enter name and address to send the forecast.
+      </p>
+
+      <h4 class="govuk-heading-s">
+        Send forecast to the customer or a third party?
+      </h4>
+
+      <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                Customer
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                Third party
+              </label>
+            </div>
+          </div>
+<br><br><br>
+<form class="form" action="existing2/name" method="post">
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+</form>
+    </div>
+  </div>
+
+{% endblock %}
