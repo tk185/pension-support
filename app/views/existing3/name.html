@@ -65,7 +65,7 @@
             Their postcode
           </label>
           <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
-          <button class="govuk-button" data-module="govuk-button">
+          <button class="govuk-button" data-module="govuk-button" onclick="change()">
             Find
           </button>
 
@@ -73,23 +73,23 @@
             <label class="govuk-label" for="address-line-1">
               Address
             </label>
-            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
+            <input class="govuk-input" id="address" name="address-line-1" type="text"></div>
 
           <div class="govuk-form-group">
             <label class="govuk-label" for="address-line-2">
               <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
             </label>
-            <input class="govuk-input" id="address-line-2" name="address-line-2" type="text"></div>
+            <input class="govuk-input" id="address2" name="address-line-2" type="text"></div>
             <div class="govuk-form-group">
               <label class="govuk-label" for="address-line-2">
                 <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
               </label>
-              <input class="govuk-input" id="address-line-2" name="address-line-2" type="text"></div>
+              <input class="govuk-input" id="address3" name="address-line-2" type="text"></div>
               <div class="govuk-form-group">
                 <label class="govuk-label" for="address-line-2">
                   <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
                 </label>
-                <input class="govuk-input" id="address-line-2" name="address-line-2" type="text"></div>
+                <input class="govuk-input" id="address4" name="address-line-2" type="text"></div>
 
 
 
@@ -112,7 +112,8 @@
         <label class="govuk-label" for="address-line-1">
         Address line 1
         </label>
-        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
+        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+      </div>
 
         <div class="govuk-form-group">
         <label class="govuk-label" for="address-line-1">
@@ -160,13 +161,26 @@
           </fieldset>
         </div>
 
+<p id="demo"></p>
+
 <br><br>
-<form class="form" action="postcode" method="post">
+<form class="form" action="" method="post">
           <button class="govuk-button" data-module="govuk-button">
             Continue
           </button>
 </form>
     </div>
   </div>
+
+
+<script>
+   function change(value){
+   document.getElementById("address").value= "7 Wyncote court";
+   document.getElementById("address2").value= "Great Road";
+   document.getElementById("address3").value= "Newcastle Upon Tyne";
+   document.getElementById("address4").value= "";
+   }
+
+</script>
 
 {% endblock %}
