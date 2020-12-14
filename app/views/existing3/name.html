@@ -69,23 +69,23 @@
             Find
           </button>
 
-          <div class="govuk-form-group">
+          <div class="govuk-form-group" id="fieldset" style="display: none">
             <label class="govuk-label" for="address-line-1">
               Address
             </label>
             <input class="govuk-input" id="address" name="address-line-1" type="text"></div>
 
-          <div class="govuk-form-group">
+          <div class="govuk-form-group" id="fieldset2" style="display: none">
             <label class="govuk-label" for="address-line-2">
               <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
             </label>
             <input class="govuk-input" id="address2" name="address-line-2" type="text"></div>
-            <div class="govuk-form-group">
+            <div class="govuk-form-group" id="fieldset3" style="display: none">
               <label class="govuk-label" for="address-line-2">
                 <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
               </label>
               <input class="govuk-input" id="address3" name="address-line-2" type="text"></div>
-              <div class="govuk-form-group">
+              <div class="govuk-form-group" id="fieldset4" style="display: none">
                 <label class="govuk-label" for="address-line-2">
                   <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
                 </label>
@@ -112,7 +112,7 @@
         <label class="govuk-label" for="address-line-1">
         Address line 1
         </label>
-        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text">
+        <input class="govuk-input" id="address-line-1 " name="address-line-1" type="text">
       </div>
 
         <div class="govuk-form-group">
@@ -175,6 +175,10 @@
 
 <script>
    function change(value){
+  document.getElementById("fieldset").style.display = "block";
+  document.getElementById("fieldset2").style.display = "block";
+  document.getElementById("fieldset3").style.display = "block";
+  document.getElementById("fieldset4").style.display = "block";
    document.getElementById("address").value= "7 Wyncote court";
    document.getElementById("address2").value= "Great Road";
    document.getElementById("address3").value= "Newcastle Upon Tyne";
