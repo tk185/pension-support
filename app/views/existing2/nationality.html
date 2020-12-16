@@ -19,97 +19,51 @@
 }
 </style>
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <form action="which-doc" method="post" class="form">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="nationality-hint" role="group">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <h1 class="govuk-fieldset__heading">
+                    What is your country of nationality?
+                  </h1>
+                </legend>
 
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <h1 class="govuk-fieldset__heading">
-              What is their overseas address?
-            </h1>
-          </legend>
-          <fieldset class="govuk-fieldset">
+                <p class="govuk-hint">This is the country of nationality shown on your identity document. Use the English spelling if it is written in two languages.</p>
 
-<div class="govuk-form-group">
-<label class="govuk-label" for="address-line-1">
-  Address line 1
-</label>
-<input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
-
-<div class="govuk-form-group">
-  <label class="govuk-label" for="address-line-1">
-    Address line 2
-  </label>
-  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
-
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="address-line-1">
-      Address line 3
-    </label>
-    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
-
-    <div class="govuk-form-group">
-      <label class="govuk-label" for="address-line-1">
-        Address line 4 (optional)
-      </label>
-      <input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
-
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="address-line-1">
-          Address line 5 (optional)
-        </label>
-        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
-
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="address-line-1">
-            Address line 6 (Optional)
-          </label>
-          <input class="govuk-input" id="address-line-1" name="address-line-1" type="text"></div>
+                <div id="nationality">
+                    <div class="govuk-form-group">
+                      <!--<label class="govuk-label govuk-date-input__label" for="phone-number">
+                        Phone number
+                      </label>-->
 
 
+                    <div id="countryTwo" class="autocomplete-wrapper" name="countryTwo" value="{{ data['countryTwo'] }}"></div>
 
+                  <div id="js-anotherCurrentCountry"></div>
 
+                      <!--<input class="govuk-input govuk-date-input__input govuk-input--width-20" id="doc-number" name="nationality" type="text"> -->
+                    </div>
+                  </div>
 
-<div class="govuk-form-group">
-<label class="govuk-label" for="address-postcode">
-  Country
-</label>
+              </fieldset>
+            </div>
 
-<div id="nationality" class="govuk-!-width-two-thirds">
-    <div class="govuk-form-group">
-      <!--<label class="govuk-label govuk-date-input__label" for="phone-number">
-        Phone number
-      </label>-->
+          <div class="govuk-form-group">
+            <button class="govuk-button">Continue</button>
+          </div>
 
-
-    <div id="countryTwo" class="autocomplete-wrapper" name="countryTwo" value="{{ data['countryTwo'] }}"></div>
-
-  <div id="js-anotherCurrentCountry"></div>
-
-      <!-- <input class="govuk-input govuk-date-input__input govuk-input--width-20" id="doc-number" name="nationality" type="text"> -->
-    </div>
-  </div>
-
-</fieldset>
-
-        </fieldset>
-      </div>
-      <br><br>
-
-
-
-<br><br>
-
-      <form class="form" action="postcode" method="post">
-                <button class="govuk-button" data-module="govuk-button">
-                  Continue
-                </button>
       </form>
+          <br>
+          <button class="govuk-button govuk-button--secondary">Finish and leave service</button>
+
     </div>
+
   </div>
 
-  <script type="text/javascript">
+
+    <script type="text/javascript">
       function suggest (query, syncResults) {
         var results = [
 
