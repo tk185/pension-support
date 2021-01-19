@@ -3,4 +3,46 @@ const router = express.Router()
 
 // Add your routes here - above the module.exports line
 
+// Branching
+// router.post('/branching/over-18-answer', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+//   const over18 = req.session.data['over-18']
+//
+//   if (over18 === 'false') {
+//     res.redirect('/branching/under-18')
+//   } else {
+//     res.redirect('/branching/over-18')
+//   }
+// })
+
+router.post('/existingUT/customer-answer', function (req, res) {
+  const cust = req.session.data['customer']
+
+  if (cust === 'main') {
+    res.redirect('/existingUT/name')
+  } else {
+    res.redirect('/existingUT2/name')
+  }
+})
+
+router.post('/existingUT/postcode-answer', function (req, res) {
+  const postcode = req.session.data['postcode']
+
+  if (postcode == 'WS13 7DH') {
+    res.redirect('/existingUT/resultWS13')
+  } else if (postcode == 'HU12 0SQ'){
+    res.redirect('/existingUT/resultHU1')
+  }
+  else if (postcode == 'HU12 0SA'){
+    res.redirect('/existingUT/resultHU12')
+  }
+  else if (postcode == 'G42 9BT') {
+    res.redirect('/existingUT/resultG42')
+  }
+})
+
+
 module.exports = router
