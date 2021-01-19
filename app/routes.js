@@ -24,24 +24,25 @@ router.post('/existingUT/customer-answer', function (req, res) {
   if (cust === 'main') {
     res.redirect('/existingUT/name')
   } else {
-    res.redirect('/existingUT2/name')
+    res.redirect('/existingUT2/name2')
   }
 })
 
 router.post('/existingUT/postcode-answer', function (req, res) {
   const postcode = req.session.data['postcode']
 
-  if (postcode == 'WS13 7DH') {
+  if (postcode == 'WS13 7DH' | postcode == 'WS137DH') {
     res.redirect('/existingUT/resultWS13')
-  } else if (postcode == 'HU12 0SQ'){
+  } else if (postcode == 'HU12 0SQ' | postcode == 'HU120SQ'){
     res.redirect('/existingUT/resultHU1')
   }
-  else if (postcode == 'HU12 0SA'){
+  else if (postcode == 'HU12 0SA' | postcode == 'HU120SA'){
     res.redirect('/existingUT/resultHU12')
   }
-  else if (postcode == 'G42 9BT') {
+  else if (postcode == 'G42 9BT' | postcode == 'G429BT') {
     res.redirect('/existingUT/resultG42')
   }
+
 })
 
 
