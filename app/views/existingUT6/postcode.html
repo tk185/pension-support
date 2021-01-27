@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="#1" onClick="history.go(-1); return false;" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+  <form class="form" action="resultWS13" method="post">
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+            What is their postcode?
+          </label>
+        </h1>
+        <br>
+        <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" style="text-transform: uppercase">
+        <br><br><a href="overseas" class="govuk-link">They live overseas</a>
+            </div>
+
+      <br><br>
+                <button class="govuk-button" data-module="govuk-button">
+                  Find address
+                </button>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}
