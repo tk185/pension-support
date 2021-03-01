@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        HMRC reviewing record
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            For the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            OK, I can see that you've paid National Isurance in the Isle of Man.
+          </p>
+        <p class="govuk-notification-banner__heading">  OK, So there's a message on the system from HMRC. It says they're doing  a manual review to check your record is up to date.
+           </p>
+          <p class="govuk-notification-banner__heading">They do this kind of work from time to time, there's nothing to worry about.
+           </p>
+        <p class="govuk-notification-banner__heading">  They've said it will be complete on 29 March.
+        </p>
+        <p class="govuk-notification-banner__heading">  While they do this, I can't see your record either.
+           </p>
+          <p class="govuk-notification-banner__heading">You'll be able to view your forecast online on 29 March.
+          </p>
+            <p class="govuk-notification-banner__heading">By then, we'll also have access to your record, so you can call back to discuss the details or about improving your State Pension if you need too.
+</p>
+        </div>
+      </div>
+
+      <!-- <div class="govuk-inset-text">
+ Complete an FPC1 form during the call and send it to the specialist team.
+</div> -->
+<br>
+<button class="govuk-button" data-module="govuk-button">
+  End call
+</button>
+
+
+    </div>
+  </div>
+
+{% endblock %}
