@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        HMRC manual review of record - for General
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            For the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            OK, So there's a message on the system from HMRC. It says they are doing a manual review to check your record is up to date. They do this from time to time, there's nothing to worry about.
+ </p>
+<p class="govuk-notification-banner__heading">While they do this, I can't see your record either. They've said it will be done on 29 March.
+ </p>
+
+        </div>
+      </div>
+
+      <!-- <div class="govuk-inset-text">
+ Complete an FPC1 form during the call and send it to the specialist team.
+</div> -->
+<br>
+<button class="govuk-button" data-module="govuk-button">
+  End call
+</button>
+
+
+    </div>
+  </div>
+
+{% endblock %}

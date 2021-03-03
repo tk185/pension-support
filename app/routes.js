@@ -45,5 +45,14 @@ router.post('/existingUT/postcode-answer', function (req, res) {
 
 })
 
+router.post('/missingcope2/mc', function (req, res) {
+  const cope = req.session.data['customer']
+
+  if (cope === 'main') {
+    res.redirect('/missingcope2/missing')
+  } else {
+    res.redirect('/missingcope2/missing2')
+  }
+})
 
 module.exports = router

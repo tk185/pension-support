@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Where is the customer coming from?
+      </h1>
+
+<form class="form" action="/missingcope2/mc" method="post">
+      <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="1" name="customer" type="radio" value="1">
+              <label class="govuk-label govuk-radios__label" for="1">
+                Check
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="2" name="customer" type="radio" value="2">
+              <label class="govuk-label govuk-radios__label" for="2">
+                General
+              </label>
+            </div>
+          </div>
+<br><br><br>
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+</form>
+    </div>
+  </div>
+
+{% endblock %}
