@@ -55,4 +55,14 @@ router.post('/missingcope2/mc', function (req, res) {
   }
 })
 
+router.post('/missingcope3/mc', function (req, res) {
+  const cope = req.session.data['customer']
+
+  if (cope === 'main') {
+    res.redirect('/missingcope3/missing')
+  } else {
+    res.redirect('/missingcope3/missing2')
+  }
+})
+
 module.exports = router
