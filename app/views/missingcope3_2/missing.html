@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Ongoing missing COPE check
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            For the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            There’s a message on the system telling me that HMRC’s Specialist team are still checking your National Insurance record. This is to ensure your pension forecast is accurate and up to date.
+            </p>
+            <p class="govuk-notification-banner__heading">
+            I’m sorry, there’s a backlog of work to get through so it’s taking longer to complete.
+            </p>
+            <p class="govuk-notification-banner__heading">
+            Unfortunately, this means I can’t see your record either. They will be finished by 14 April, so you can go back online then.
+            </p>
+
+        </div>
+      </div>
+
+      <!-- <div class="govuk-inset-text">
+Customers can call HMRC on 0800 200 300 055 if needed.
+</div> -->
+<br>
+<button class="govuk-button" data-module="govuk-button">
+  End call
+</button>
+
+
+    </div>
+  </div>
+
+{% endblock %}
