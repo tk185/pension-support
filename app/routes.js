@@ -78,7 +78,7 @@ router.post('/missingcope2_2/mc', function (req, res) {
 router.post('/missingcope3_2/mc', function (req, res) {
   const cope = req.session.data['customer']
 
-  if (cope === 'main') {
+  if (cope === '3') {
     res.redirect('/missingcope3_2/missing')
   } else {
     res.redirect('/missingcope3_2/missing2')
