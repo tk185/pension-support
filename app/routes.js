@@ -28,6 +28,16 @@ router.post('/existingUT/customer-answer', function (req, res) {
   }
 })
 
+router.post('/existing_final/customer-answer', function (req, res) {
+  const cust = req.session.data['customer']
+
+  if (cust === 'main') {
+    res.redirect('/existing_final/name')
+  } else {
+    res.redirect('/existing_final/name2')
+  }
+})
+
 router.post('/existingUT/postcode-answer', function (req, res) {
   const postcode = req.session.data['postcode']
 
