@@ -1,0 +1,56 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Manual calculation needed
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            For the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            Sorry, Unfortunately I cannot do a pension forecast automatically for you. There’s a message on the system telling me a manual calculation is needed.
+            </p>
+            <p class="govuk-notification-banner__heading">
+            Unfortunately, it means I can’t see your record on the system right now.
+            </p>
+            <p class="govuk-notification-banner__heading">
+            This kind of manual work is done by the Specialist team, I will confirm some details with you and send it over to them while you are on the phone. There’s nothing to worry about, they do this kind of manual work all the time.
+            </p>
+            <p class="govuk-notification-banner__heading">
+            I will also raise this with HMRC to see if we can get you back on the automated system, so its quicker in future.
+            </p>
+            <p class="govuk-notification-banner__heading">
+            Sorry about the delay your forecast will be send out in 5-6 weeks.
+
+ </p>
+
+        </div>
+      </div>
+
+      <div class="govuk-inset-text">
+        Complete an FPC1 form during the call and send it to the specialist team.<br>
+        Customers can call HMRC on 0800 200 300 055 if needed.
+
+</div>
+<br>
+<button class="govuk-button" data-module="govuk-button">
+  End call
+</button>
+
+
+    </div>
+  </div>
+
+{% endblock %}
