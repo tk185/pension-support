@@ -39,7 +39,7 @@
         <span id="passport-issued-error" class="govuk-error-message">
         <span class="govuk-visually-hidden">Error:</span> You need to select a valid address
       </span>
-      <div class="govuk-input--error" style="width: 80%">
+      <div class="govuk-input--error" style="width: 30%">
         <select class="govuk-select" id="sort" name="sort">
           <option value="updated" selected>0 addresses found</option>
 
@@ -47,9 +47,14 @@
         </div>
       </div>
 
-      <div class="govuk-inset-text">
-        As no addresses have been assigned yet to this postcode <a href="">enter the address manually</a>
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          As no addresses have been assigned yet to this postcode <a href="">enter the address manually</a>
+        </strong>
       </div>
+
 
 <br><br>
 <form class="form" action="../existingUT" method="post">

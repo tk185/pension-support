@@ -23,21 +23,21 @@
       <h4 class="govuk-heading-s">
         Send forecast to the customer or a third party?
       </h4>
-<form class="form" action="existing_final/name" method="post">
-      <div class="govuk-radios">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="main" name="type" type="radio" value="main">
-              <label class="govuk-label govuk-radios__label" for="main">
-                Customer
-              </label>
+  <form class="form" action="/existing_final/customer-answer" method="post">
+        <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="main" name="type" type="radio" value="main">
+                <label class="govuk-label govuk-radios__label" for="main">
+                  Customer
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="third" name="type" type="radio" value="third">
+                <label class="govuk-label govuk-radios__label" for="third">
+                  Third party
+                </label>
+              </div>
             </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="third" name="type" type="radio" value="third">
-              <label class="govuk-label govuk-radios__label" for="third">
-                Third party
-              </label>
-            </div>
-          </div>
 <br><br><br>
           <button class="govuk-button" data-module="govuk-button">
             Continue

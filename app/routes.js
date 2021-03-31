@@ -18,10 +18,10 @@ const router = express.Router()
 //   }
 // })
 
-router.post('/existingUT/customer-answer', function (req, res) {
-  const cust = req.session.data['customer']
+router.post('existingUT/customer-answer', function (req, res) {
+  const customer = req.session.data['customer']
 
-  if (cust === 'main') {
+  if (customer === 'main') {
     res.redirect('/existingUT/name')
   } else {
     res.redirect('/existingUT2/name2')
@@ -31,12 +31,14 @@ router.post('/existingUT/customer-answer', function (req, res) {
 router.post('/existing_final/customer-answer', function (req, res) {
   const cust = req.session.data['customer']
 
-  if (cust === 'main') {
-    res.redirect('/existing_final/name')
+  if (cust === 'third') {
+    res.redirect('name2')
   } else {
-    res.redirect('/existing_final/name2')
+    res.redirect('name')
   }
 })
+
+
 
 router.post('/existingUT/postcode-answer', function (req, res) {
   const postcode = req.session.data['postcode']
