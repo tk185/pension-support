@@ -15,7 +15,7 @@
     <div class="govuk-grid-column-two-thirds">
       <span class="govuk-caption-l">NI number: AA 12 34 56 C</span>
       <h1 class="govuk-heading-xl">
-        What is their full name?
+        What is your full name?
       </h1>
 
       <div class="govuk-form-group">
@@ -23,7 +23,31 @@
         </div>
 <br>
 
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+      <h1 class="govuk-fieldset__heading">
+        Do you want a Welsh language version of the forecast?
+      </h1>
+    </legend>
 
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          No
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
 
 <br><br><br>
 <form class="form" action="postcode" method="post">
