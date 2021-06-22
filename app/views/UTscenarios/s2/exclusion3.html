@@ -1,0 +1,60 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-l">NI number: AA 12 34 56 C</span>
+      <h1 class="govuk-heading-xl">
+        Customer record with Isle of Man contributions
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            For the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+HMRC have stopped us from seeing your record, because you have worked in the Isle of Man.
+            </p>
+              <p class="govuk-notification-banner__heading">
+                HMRC will update your record to take that into account.
+              </p>
+              <p class="govuk-notification-banner__heading">
+                Sorry, there will be a delay while your record is updated but the Specialist team will post you a letter explaining what is happening.
+              </p>
+              <p class="govuk-notification-banner__heading">
+                As soon as your record is updated by HMRC, they will post a forecast out to you.
+              </p>
+
+
+
+        </div>
+      </div>
+
+      <div class="govuk-inset-text">
+<span class="govuk-body govuk-!-font-weight-bold">Telephone and BR19 process:</span> Complete an<span class="govuk-body govuk-!-font-weight-bold">‘FPC1’</span> and select <span class="govuk-body govuk-!-font-weight-bold">‘Specialist Team’</span> as the department and <span class="govuk-body govuk-!-font-weight-bold">'IoM'</span> as the category.
+</div>
+<br>
+
+
+<br>
+<form class="form" action="../../UTscenarios" method="post">
+<button class="govuk-button" data-module="govuk-button">
+  Back to start
+</button>
+</form>
+<br>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
