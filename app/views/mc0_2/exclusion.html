@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-l">NI number: AA 12 34 56 C</span>
+      <h1 class="govuk-heading-xl">
+        Customer record has a Manual Correspondence Indicator (MCI)
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Tell the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+  I can see that HMRC have restricted access to your National Insurance record, this means I can’t see your record.
+            </p>
+            <p class="govuk-notification-banner__heading">
+      You need to call HMRC and give them the reference ‘MCI’. I’ve got the number here for you.
+              </p>
+              <p class="govuk-notification-banner__heading">
+  Where are you calling from today?
+              </p>
+
+              <p>
+                UK: 0300 200 3300 <br>
+    Relay UK (For those that cannot hear or speak on the phone): 18001 0300 200 3300
+              </p>
+            <p>
+          Outside UK: +44 135 535 9022
+            </p>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-inset-text">
+<span class="govuk-body govuk-!-font-weight-bold">BR19 process:</span> Go to <span class="govuk-body govuk-!-font-weight-bold">‘The Hub’</span> and select <span class="govuk-body govuk-!-font-weight-bold">‘call/clerical’</span> then <span class="govuk-body govuk-!-font-weight-bold">'Letters'</span> and send the customer the appropriate letter.
+</div>
+<br>
+
+
+<br>
+<form class="form" action="../../UTscenarios" method="post">
+<button class="govuk-button" data-module="govuk-button">
+  Back to start
+</button>
+</form>
+<br>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
