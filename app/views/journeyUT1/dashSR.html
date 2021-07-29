@@ -1,0 +1,222 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl" style="margin-bottom:10px">
+      Forecast information for AA 12 23 34 C
+
+      </h1>
+<!-- <strong class="govuk-tag govuk-tag--blue" id="company-information-status">Standard record</strong> -->
+<br><br><br>
+            <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      Overview
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <ol class="app-task-list">
+                          <li>
+
+
+                          <li>
+
+                            <ul class="app-task-list__items" style="padding-left:0">
+                              <li class="app-task-list__item">
+
+                                    State pension date
+
+                                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="company-information-status">21 September 2052</strong>
+                              </li>
+                              <!-- <li class="app-task-list__item">
+
+                                    State pension age
+
+                                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">68</strong>
+                              </li> -->
+                              <li class="app-task-list__item">
+
+                                    Final relevant year
+
+                                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">2051-52 (30 years to FRY)</strong>
+                              </li>
+
+                              <li class="app-task-list__item">
+                                <span class="app-task-list__task-name">
+                                  Estimate up to 5 April 2021
+                                </span>
+                                <strong class="govuk-tag govuk-tag-blue app-task-list__tag" id="medical-information-status">£73.80 a week</strong>
+                              </li>
+                              <li class="app-task-list__item">
+                                <span class="app-task-list__task-name">
+                                  Qualifying years
+                                </span>
+
+                                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">14</strong>
+                              </li>
+                              <li class="app-task-list__item">
+                                <span class="app-task-list__task-name">
+                                  Most they can get
+                                </span>
+                                <strong class="govuk-tag govuk-tag-blue app-task-list__tag" id="medical-information-status">£179.60 a week</strong>
+                              </li>
+
+                              <li class="app-task-list__item">
+                                <span class="app-task-list__task-name">
+                                  Forecast
+                                </span>
+                                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">£179.60 (21 years needed) a week</strong>
+                              </li>
+
+                              <li class="app-task-list__item">
+                                <span class="app-task-list__task-name">
+                                  Cope estimate:
+                                </span>
+                                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">£6.98 a week</strong>
+                                <br><details class="govuk-details" data-module="govuk-details" style="margin-bottom:0px">
+                                  <summary class="govuk-details__summary">
+                                    <span class="govuk-details__summary-text">
+                                      Contracting out explanation
+                                    </span>
+                                  </summary>
+                                  <div class="govuk-details__text">
+                                    Most people were contracted out at some time in their working life. That meant your NI contributions for that time were lower or paid into another pension, for example a private or workplace pension.
+<br><br>Your forecast shows an estimate of what you would have paid into your State Pension if you had not been contracted out. This is the Contracted Out pension Equivalent (COPE) figure, it is only for information, you do not need to add or take away this figure from your State Pension forecast.
+<br><br>If you have a substantial COPE figure you may need more than 35 years of NI contributions to reach the full State Pension.
+                                  </div>
+                                </details>
+                              </li>
+                            </ul>
+                          </li>
+
+                        </ol>
+                </div>
+              </div>
+              <!-- <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                      Modelling
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                  <p class='govuk-body'>Content</p>
+                </div>
+              </div> -->
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                      Improve State Pension
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                  <strong class="govuk-tag govuk-tag--grey" id="company-information-status">Future and past years available</strong>
+                  <br><br><br>
+
+                  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend">
+      Is the customer still contributing National Insurance?
+    </legend>
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="contact">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                <legend class="govuk-fieldset__legend">
+                  What date will they stop?
+                </legend>
+                <div id="passport-issued-hint" class="govuk-hint">
+Customer is State Pension age on 10 July 2052
+                </div>
+                <div class="govuk-date-input" id="passport-issued">
+
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                </div>
+              </fieldset>
+
+            </div>
+
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="contact-2">
+              No
+            </label>
+
+          </div>
+
+
+    </div>
+
+    <br>
+
+  </fieldset>
+  <br>
+  <button class="govuk-button" data-module="govuk-button">
+  Calculate
+  </button>
+  <br>
+                </div>
+              </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                      National Insurance summary
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+
+                </div>
+              </div>
+            </div>
+            <form class="form" action="#" method="post">
+                      <button class="govuk-button" data-module="govuk-button">
+                        Continue
+                      </button>
+            </form>
+
+<!-- <form class="form" action="over_pension_age2_2/NI" method="post">
+
+          <button class="govuk-button" data-module="govuk-button">
+            Start now
+          </button>
+</form> -->
+    </div>
+  </div>
+
+{% endblock %}
