@@ -90,9 +90,7 @@
                                     </span>
                                   </summary>
                                   <div class="govuk-details__text">
-                                    Most people were contracted out at some time in their working life. That meant your NI contributions for that time were lower or paid into another pension, for example a private or workplace pension.
-<br><br>Your forecast shows an estimate of what you would have paid into your State Pension if you had not been contracted out. This is the Contracted Out pension Equivalent (COPE) figure, it is only for information, you do not need to add or take away this figure from your State Pension forecast.
-<br><br>If you have a substantial COPE figure you may need more than 35 years of NI contributions to reach the full State Pension.
+                                    There is a COPE figure on your forecast. This is just to indicate that you will be getting some money from a work-based pension scheme as well as your State Pension. This is because, like most people, you were contracted-out (of the additional State Pension system) for the time you were in a work-based pension scheme. People who were not in a work-based pension scheme will not be getting these sorts of private pension scheme payments.
                                   </div>
                                 </details>
                               </li>
@@ -123,72 +121,47 @@
                   </h2>
                 </div>
                 <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-                  <strong class="govuk-tag govuk-tag--grey" id="company-information-status">Future and past years available</strong>
+                  <strong class="govuk-tag govuk-tag--grey" id="company-information-status">Only past years available</strong>
                   <br><br><br>
 
-                  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend">
-      Is the customer still contributing National Insurance?
-    </legend>
-    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-            <label class="govuk-label govuk-radios__label" for="contact">
-              Yes
-            </label>
-          </div>
-          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
-            <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-
-                <legend class="govuk-fieldset__legend">
-                  What date will they stop?
-                </legend>
-                <div id="passport-issued-hint" class="govuk-hint">
-Customer is State Pension age on 10 July 2052
-                </div>
-                <div class="govuk-date-input" id="passport-issued">
-
-                  <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                        Month
-                      </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-                  </div>
-                  <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                        Year
-                      </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-                  </div>
-                </div>
-              </fieldset>
-
-            </div>
-
-          </div>
-
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
-            <label class="govuk-label govuk-radios__label" for="contact-2">
-              No
-            </label>
-
-          </div>
-
-
-    </div>
-
-    <br>
-
-  </fieldset>
-  <br>
-  <button class="govuk-button" data-module="govuk-button">
-  Calculate
-  </button>
-  <br>
+                  <table class="govuk-table">
+                    <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption>
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Gaps filled</th>
+                        <th scope="col" class="govuk-table__header">Old rules</th>
+                        <th scope="col" class="govuk-table__header">New rules</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell">Estimate 5 April 2016</td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag-blue" id="medical-information-status">£98.44 a week</strong></td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="company-information-status">£98.18 a week</strong></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell">1 pre 2016 gap</td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="company-information-status">£103.03 a week</strong></td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag-blue" id="medical-information-status">£103.32 a week</strong></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell">2 pre</td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="company-information-status">£107.61 a week</strong></td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag-blue" id="medical-information-status">£108.44 a week</strong></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell">3 pre</td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="company-information-status">£112.20 a week</strong></td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag-blue" id="medical-information-status">£113.58 a week</strong></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <td scope="row" class="govuk-table__cell">4 pre</td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="company-information-status">£116.79 a week</strong></td>
+                        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag-blue" id="medical-information-status">£118.71 a week</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+<br>
                 </div>
               </div>
               <div class="govuk-accordion__section ">
@@ -204,9 +177,10 @@ Customer is State Pension age on 10 July 2052
                 </div>
               </div>
             </div>
-            <form class="form" action="#" method="post">
+            <br><br>
+            <form class="form" action="dashSR3" method="post">
                       <button class="govuk-button" data-module="govuk-button">
-                        Continue
+                        Back to start
                       </button>
             </form>
 
