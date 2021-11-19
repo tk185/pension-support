@@ -146,7 +146,129 @@ router.post('/examples/branching/over-18-answer', function (req, res) {
 })
 
 
+router.post('/RoleA/customerType', function (req, res) {
+  const type = req.session.data['type']
 
+  if (type === 'main') {
+    res.redirect('/RoleA/name')
+  } else {
+    res.redirect('/RoleA/name2')
+  }
+})
 
+router.post('/RoleC/customerType', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC/name')
+  } else {
+    res.redirect('/RoleC/name2')
+  }
+})
+
+router.post('/RoleC/NIroute', function (req, res) {
+  const number = req.session.data['number']
+
+  if (number == 'QQ 12 34 56 C' | number == 'QQ123456C') {
+    res.redirect('/RoleC/routeMB')
+  } else if (number == 'QQ 23 45 65 D' | number == 'QQ234565D'){
+    res.redirect('/RoleC/routeNV')
+  }
+  else if (number == 'QQ 34 56 78 E' | number == 'QQ345678E'){
+    res.redirect('/RoleC/routeRRE')
+  }
+  else if (number == 'QQ 45 67 89 F' | number == 'QQ456789F') {
+    res.redirect('/RoleC/routeSR')
+  }
+  else if (number == 'QQ 91 82 73 G' | number == 'QQ918273G') {
+    res.redirect('/RoleC/routeSR2')
+  }
+  else if (number == 'QQ 64 55 19 H' | number == 'QQ645519H') {
+    res.redirect('/RoleC/routeSR3')
+  }
+  else {
+    res.redirect('/RoleC/routeSR')
+  }
+})
+
+router.post('/RoleC/MBquestion', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC/access')
+  } else {
+    res.redirect('/RoleC/dashMB')
+  }
+})
+
+router.post('/RoleC/NVquestion', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC/access')
+  } else {
+    res.redirect('/RoleC/index')
+  }
+})
+
+router.post('/RoleC/RREquestion', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC/access')
+  } else {
+    res.redirect('/RoleC/dashRRE')
+  }
+})
+
+router.post('/RoleC/SRquestion', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC/access')
+  } else {
+    res.redirect('/RoleC/dashSR')
+  }
+})
+
+router.post('/RoleC/SR2question', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC/access')
+  } else {
+    res.redirect('/RoleC/dashSR2')
+  }
+})
+
+router.post('/RoleC/SR3question', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC/access')
+  } else {
+    res.redirect('/RoleC/dashSR3')
+  }
+})
+
+router.post('/RoleC/format', function (req, res) {
+  const access = req.session.data['access']
+
+  if (access === 'yes') {
+    res.redirect('/RoleC/accessroute')
+  } else {
+    res.redirect('/RoleC/customer')
+  }
+})
+
+router.post('/RoleA/format', function (req, res) {
+  const access = req.session.data['access']
+
+  if (access === 'yes') {
+    res.redirect('/RoleA/accessroute')
+  } else {
+    res.redirect('/RoleA/customer')
+  }
+})
 
 module.exports = router
