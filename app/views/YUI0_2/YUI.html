@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form class="form" action="dashYUI" method="post">
+      <h1 class="govuk-heading-xl">
+        Undecided years for QQ 12 23 34 C
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            For the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            I can see there are undecided years on your record. This means these gaps have not been included in your State Pension forecast.
+ </p>
+<p class="govuk-notification-banner__heading">You can call HMRC to find out why there are undecided years on your record.
+ </p>
+<p class="govuk-notification-banner__heading">HMRC can tell you whether you can pay for these gaps and how much it will cost.
+</p>
+<p class="govuk-notification-banner__heading">I’ve got the number here for you. Where are you calling from today?
+          </p>
+          <p>UK: 0300 200 3500 <br>
+        Relay UK (For those that cannot hear or speak on the phone): 18001 0300 200 3500<br>
+          Outside UK: +44 191 203 7010</p>
+        </div>
+      </div>
+
+
+<br>
+
+
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+</form>
+    </div>
+  </div>
+
+{% endblock %}
