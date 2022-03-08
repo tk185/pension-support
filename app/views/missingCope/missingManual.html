@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+            <span class="govuk-caption-l">NI number: ER 49 00 00 A</span>
+      <h1 class="govuk-heading-xl">
+        Record needs a manual COPE calculation
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Tell the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+Sorry, there’s a message on the system telling me a manual calculation is needed for your pension forecast.
+  </p>
+  <p class="govuk-notification-banner__heading">
+Unfortunately, that means I can’t send you a forecast today.
+  <p>
+    <p class="govuk-notification-banner__heading">
+If I can just confirm your details with you now, I’ll send them over to the Specialist team, who will post you a forecast within 10 weeks.
+          </p>
+        </div>
+      </div>
+
+      <div class="govuk-inset-text">
+<p><span class="govuk-body govuk-!-font-weight-bold">FPC1 process:</span> Add customer’s name and National Insurance number. Select <span class="govuk-body govuk-!-font-weight-bold">Specialist</span> as the department and <span class="govuk-body govuk-!-font-weight-bold">Missing COPE Manual Calc</span> as the category.</p>
+</div>
+<br>
+<button class="govuk-button" data-module="govuk-button">
+  Back to start
+</button>
+
+
+    </div>
+  </div>
+
+{% endblock %}
