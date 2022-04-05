@@ -271,4 +271,25 @@ router.post('/RoleA/format', function (req, res) {
   }
 })
 
+router.post('/RoleC0_2/customerType', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_2/name')
+  } else {
+    res.redirect('/RoleC0_2/customer2')
+  }
+})
+
+router.post('/RoleC0_2/legrep', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_2/name2')
+  } else {
+    res.redirect('/RoleC0_2/legal')
+  }
+})
+
+
 module.exports = router
