@@ -1,0 +1,108 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="#1" onClick="history.go(-1); return false;" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<span class="govuk-caption-l">NI number: QQ 12 34 56 C</span>
+      <h1 class="govuk-heading-l" style="margin-bottom: 30px">
+        Forecast preview
+      </h1>
+
+
+
+<br>
+<form class="form" action="confirmation" method="post">
+          <button class="govuk-button" data-module="govuk-button">
+            Send forecast
+          </button>
+</form>
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+Download forecast as PDF
+</button>
+
+
+
+<br>
+<img src="/public/images/1.png" style="width:100%">
+  <br><br><br>
+<details class="govuk-details" data-module="govuk-details" style="padding-bottom:0px;">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Provided details
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              National Insurance number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              QQ 12 34 56 C
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Third party details
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Robert Sanchez<br>
+    Rick and Morty Accountants Limited
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> date of birth</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Customer full name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              John Smith
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              1 Featherwood Avenue<br>
+            Newcastle Upon Tyne<br>
+          NE15 6BW
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+  </div>
+</details>
+    </div>
+  </div>
+
+{% endblock %}
