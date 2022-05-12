@@ -291,5 +291,15 @@ router.post('/RoleC0_2/legrep', function (req, res) {
   }
 })
 
+router.post('/MQP_letter0_1/third_party', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/MQP_letter0_1/name2')
+  } else {
+    res.redirect('/MQP_letter0_1/preview')
+  }
+})
+
 
 module.exports = router
