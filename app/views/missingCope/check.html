@@ -1,0 +1,65 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  <a href="#1" onClick="history.go(-1); return false;" class="govuk-back-link">Back</a>
+{% endblock %}
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form class="form" action="missingManual" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <span class="govuk-caption-l">NI number: QQ 12 34 56 C</span>
+            <h1 class="govuk-fieldset__heading">
+              The following details are associated with the NI number QQ 12 34 56 C
+            </h1>
+          </legend>
+
+
+
+          <div class="govuk-inset-text">
+            <p><span class="govuk-body govuk-!-font-weight-bold">Name:</span> John Eduardo Smith</p>
+            <p><span class="govuk-body govuk-!-font-weight-bold">Date of Birth:</span> 15 May</p>
+          </div>
+          <br><br>
+
+          <h3 class="govuk-heading-m">
+               Are these details correct?
+             </h3>
+             <div class="govuk-radios govuk-radios--inline">
+               <div class="govuk-radios__item">
+                 <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                 <label class="govuk-label govuk-radios__label" for="changed-name">
+                   Yes
+                 </label>
+               </div>
+               <div class="govuk-radios__item">
+                 <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                 <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                   No
+                 </label>
+               </div>
+             </div>
+
+
+
+        </fieldset>
+      </div>
+
+
+<br><br>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+</form>
+    </div>
+  </div>
+
+{% endblock %}
