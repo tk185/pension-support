@@ -314,9 +314,9 @@ router.post('/MQP_Letter0_2/addcheck', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/MQP_Letter0_2/customer')
+    res.redirect('/mqp_letter0_2/customer')
   } else {
-    res.redirect('/MQP_Letter0_2/postcode')
+    res.redirect('/mqp_letter0_2/postcode')
   }
 })
 
