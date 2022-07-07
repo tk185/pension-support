@@ -300,6 +300,25 @@ router.post('/MQP_Letter0_1/third_party', function (req, res) {
     res.redirect('/MQP_Letter0_1/preview')
   }
 })
+router.post('/MQP_Letter0_2/third_party', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/MQP_Letter0_2/name2')
+  } else {
+    res.redirect('/MQP_Letter0_2/preview')
+  }
+})
+
+router.post('/MQP_Letter0_2/addcheck', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/MQP_Letter0_2/customer')
+  } else {
+    res.redirect('/MQP_Letter0_2/postcode')
+  }
+})
 
 
 
