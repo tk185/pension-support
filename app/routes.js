@@ -304,9 +304,9 @@ router.post('/MQP_Letter0_2/third_party', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/MQP_Letter0_2/name2')
+    res.redirect('/mqp_letter0_2/name2')
   } else {
-    res.redirect('/MQP_Letter0_2/preview')
+    res.redirect('/mqp_letter0_2/preview')
   }
 })
 
