@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Current amount is greater than the forecast amount
+      </h1>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Tell the customer
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+          I can see that a manual calculation is needed for your State Pension forecast.
+            </p>
+            <p class="govuk-notification-banner__heading">
+            This means I’m unable to send you a forecast today.
+            </p>
+            <p class="govuk-notification-banner__heading">
+          Can I just confirm some details with you now?
+            </p>
+
+        </div>
+      </div>
+
+      <div class="govuk-inset-text">
+    <p class="govuk-body govuk-!-font-weight-regular">    <span class="govuk-body govuk-!-font-weight-bold">FPC1 process:</span> Add customer’s name and National Insurance number. Select <span class="govuk-body govuk-!-font-weight-bold">Specialist</span> as the department and <span class="govuk-body govuk-!-font-weight-bold">Somethings Gone Wrong</span> as the category.</p>
+      <p class="govuk-body govuk-!-font-weight-regular">  Check the <span class="govuk-body govuk-!-font-weight-bold">FPC work count</span> to give the customer a timescale for receiving their forecast.</p>
+
+</div>
+<br>
+<button class="govuk-button" data-module="govuk-button">
+  Back to start
+</button>
+
+
+    </div>
+  </div>
+
+{% endblock %}
