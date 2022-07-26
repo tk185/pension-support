@@ -320,6 +320,49 @@ router.post('/MQP_Letter0_2/addcheck', function (req, res) {
   }
 })
 
+router.post('/RoleC0_3/NIroute', function (req, res) {
+  const number = req.session.data['number']
 
+  if (number == 'QQ 12 34 56 C' | number == 'QQ123456C') {
+    res.redirect('/RoleC0_3/routeMB')
+  } else if (number == 'QQ 23 45 65 D' | number == 'QQ234565D'){
+    res.redirect('/RoleC0_3/routeNV')
+  }
+  else if (number == 'QQ 34 56 78 E' | number == 'QQ345678E'){
+    res.redirect('/RoleC0_3/routeRRE')
+  }
+  else if (number == 'QQ 45 67 89 F' | number == 'QQ456789F') {
+    res.redirect('/RoleC0_3/routeSR')
+  }
+  else if (number == 'QQ 91 82 73 G' | number == 'QQ918273G') {
+    res.redirect('/RoleC0_3/routeSR2')
+  }
+  else if (number == 'QQ 64 55 19 H' | number == 'QQ645519H') {
+    res.redirect('/RoleC0_3/routeSR3')
+  }
+  else {
+    res.redirect('/RoleC0_3/routeSR')
+  }
+})
+
+router.post('/RoleC0_3/SRquestion', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_3/access')
+  } else {
+    res.redirect('/RoleC0_3/dashSR')
+  }
+})
+
+router.post('/RoleC0_3/customerType', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_3/name')
+  } else {
+    res.redirect('/RoleC0_3/customer_third')
+  }
+})
 
 module.exports = router
