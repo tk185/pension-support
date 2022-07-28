@@ -349,7 +349,7 @@ router.post('/RoleC0_3/SRquestion', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_3/access')
+    res.redirect('/RoleC0_3/check')
   } else {
     res.redirect('/RoleC0_3/dashSR')
   }
@@ -364,5 +364,47 @@ router.post('/RoleC0_3/customerType', function (req, res) {
     res.redirect('/RoleC0_3/customer_third')
   }
 })
+
+router.post('/RoleC0_3/missingManual', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_3/access')
+  } else {
+    res.redirect('/RoleC0_3/NI')
+  }
+})
+
+router.post('/RoleC0_3/addcheck', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_3/preview')
+  } else {
+    res.redirect('/RoleC0_3/postcode')
+  }
+})
+
+router.post('/RoleC0_3/attorney', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_3/name3')
+  } else {
+    res.redirect('/RoleC0_3/name2')
+  }
+})
+
+router.post('/RoleC0_3/addcheck2', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_3/preview_tp')
+  } else {
+    res.redirect('/RoleC0_3/postcode2')
+  }
+})
+
+
 
 module.exports = router
