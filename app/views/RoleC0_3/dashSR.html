@@ -11,8 +11,8 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl" style="margin-bottom:10px">
       Forecast information for <br>QQ 12 23 34 C
-
       </h1>
+      <span class="govuk-caption-xl">John Eduardo Smith born on 15 May 1987</span>
 <!-- <strong class="govuk-tag govuk-tag--blue" id="company-information-status">Standard record</strong> -->
 <br><br><br>
             <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
@@ -343,8 +343,90 @@ Customer is State Pension age on 21 September 2052
 
                               </ol>
                 </div>
+
+              </div>
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                      Send letter to customer
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+
+
+
+                  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend">
+      Which letter do you want to send?
+    </legend>
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="contact">
+              State Pension forecast
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                <legend class="govuk-fieldset__legend">
+                  What date will they stop?
+                </legend>
+                <div id="passport-issued-hint" class="govuk-hint">
+  Customer is State Pension age on 21 September 2052
+                </div>
+                <div class="govuk-date-input" id="passport-issued">
+
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                </div>
+              </fieldset>
+
+            </div>
+
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="contact-2">
+              Minimum Qualifying Period letter
+            </label>
+
+          </div>
+
+
+    </div>
+
+    <br>
+
+  </fieldset>
+  <br>
+  <form class="form" action="name" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+  Continue
+  </button>
+  </form>
+  <br>
+                </div>
+
               </div>
             </div>
+
             <br><br>
             <form class="form" action="dashSR2" method="post">
                       <button class="govuk-button" data-module="govuk-button">
