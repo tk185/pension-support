@@ -369,7 +369,7 @@ router.post('/RoleC0_3/missingManual', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_3/access')
+    res.redirect('/RoleC0_3/routeSR')
   } else {
     res.redirect('/RoleC0_3/NI')
   }
@@ -434,7 +434,7 @@ router.post('/RoleC0_4/SRquestion', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_4/check')
+    res.redirect('/RoleC0_4/access')
   } else {
     res.redirect('/RoleC0_4/dashSR')
   }
@@ -454,7 +454,7 @@ router.post('/RoleC0_4/missingManual', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_4/access')
+    res.redirect('/RoleC0_4/routeSR')
   } else {
     res.redirect('/RoleC0_4/NI')
   }
