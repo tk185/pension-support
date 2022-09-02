@@ -476,7 +476,7 @@ router.post('/RoleC0_4/attorney', function (req, res) {
   if (type === 'main') {
     res.redirect('/RoleC0_4/name3')
   } else {
-    res.redirect('/RoleC0_4/name2')
+    res.redirect('/RoleC0_4/thirdparty0')
   }
 })
 
