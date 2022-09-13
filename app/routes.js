@@ -490,5 +490,100 @@ router.post('/RoleC0_4/addcheck2', function (req, res) {
   }
 })
 
+router.post('/RoleC0_5/NIroute', function (req, res) {
+  const number = req.session.data['number']
+
+  if (number == 'QQ 12 34 56 C' | number == 'QQ123456C') {
+    res.redirect('/RoleC0_5/routeMB')
+  } else if (number == 'QQ 23 45 65 D' | number == 'QQ234565D'){
+    res.redirect('/RoleC0_5/routeNV')
+  }
+  else if (number == 'QQ 34 56 78 E' | number == 'QQ345678E'){
+    res.redirect('/RoleC0_5/routeRRE')
+  }
+  else if (number == 'QQ 45 67 89 F' | number == 'QQ456789F') {
+    res.redirect('/RoleC0_5/routeSR')
+  }
+  else if (number == 'QQ 91 82 73 G' | number == 'QQ918273G') {
+    res.redirect('/RoleC0_5/routeSR2')
+  }
+  else if (number == 'QQ 64 55 19 H' | number == 'QQ645519H') {
+    res.redirect('/RoleC0_5/routeSR3')
+  }
+  else {
+    res.redirect('/RoleC0_5/routeSR')
+  }
+})
+
+router.post('/RoleC0_5/SRquestion', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_5/access')
+  } else {
+    res.redirect('/RoleC0_5/dashSR')
+  }
+})
+
+router.post('/RoleC0_5/customerType', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_5/name')
+  } else {
+    res.redirect('/RoleC0_5/customer_third')
+  }
+})
+
+router.post('/RoleC0_5/missingManual', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_5/routeSR')
+  } else {
+    res.redirect('/RoleC0_5/NI')
+  }
+})
+
+router.post('/RoleC0_5/addcheck', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_5/preview')
+  } else {
+    res.redirect('/RoleC0_5/overseas2')
+  }
+})
+
+router.post('/RoleC0_5/attorney', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_5/name3')
+  } else {
+    res.redirect('/RoleC0_5/thirdparty0')
+  }
+})
+
+router.post('/RoleC0_5/addcheck2', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_5/preview_tp')
+  } else {
+    res.redirect('/RoleC0_5/postcode2')
+  }
+})
+
+router.post('/RoleC0_5/overseascheck', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_5/postcode')
+  } else {
+    res.redirect('/RoleC0_5/overseas0')
+  }
+})
+
 
 module.exports = router
