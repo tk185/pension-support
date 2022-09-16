@@ -571,7 +571,7 @@ router.post('/RoleC0_5/addcheck2', function (req, res) {
   if (type === 'main') {
     res.redirect('/RoleC0_5/preview_tp')
   } else {
-    res.redirect('/RoleC0_5/postcode2')
+    res.redirect('/RoleC0_5/overseas2b')
   }
 })
 
@@ -579,9 +579,9 @@ router.post('/RoleC0_5/overseascheck', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_5/postcode')
+    res.redirect('/RoleC0_5/postcode2')
   } else {
-    res.redirect('/RoleC0_5/overseas0')
+    res.redirect('/RoleC0_5/overseas0b')
   }
 })
 
