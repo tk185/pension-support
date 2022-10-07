@@ -585,5 +585,101 @@ router.post('/RoleC0_5/overseascheck', function (req, res) {
   }
 })
 
+router.post('/RoleC0_6/NIroute', function (req, res) {
+  const number = req.session.data['number']
+
+  if (number == 'QQ 12 34 56 C' | number == 'QQ123456C') {
+    res.redirect('/RoleC0_6/routeMB')
+  } else if (number == 'QQ 23 45 65 D' | number == 'QQ234565D'){
+    res.redirect('/RoleC0_6/routeNV')
+  }
+  else if (number == 'QQ 34 56 78 E' | number == 'QQ345678E'){
+    res.redirect('/RoleC0_6/routeRRE')
+  }
+  else if (number == 'QQ 45 67 89 F' | number == 'QQ456789F') {
+    res.redirect('/RoleC0_6/routeSR')
+  }
+  else if (number == 'QQ 91 82 73 G' | number == 'QQ918273G') {
+    res.redirect('/RoleC0_6/routeSR2')
+  }
+  else if (number == 'QQ 64 55 19 H' | number == 'QQ645519H') {
+    res.redirect('/RoleC0_6/routeSR3')
+  }
+  else {
+    res.redirect('/RoleC0_6/routeSR')
+  }
+})
+
+router.post('/RoleC0_6/SRquestion', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/altformat')
+  } else {
+    res.redirect('/RoleC0_6/dashSR')
+  }
+})
+
+router.post('/RoleC0_6/customerType', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/name')
+  } else {
+    res.redirect('/RoleC0_6/customer_third')
+  }
+})
+
+router.post('/RoleC0_6/missingManual', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/routeSR')
+  } else {
+    res.redirect('/RoleC0_6/NI')
+  }
+})
+
+router.post('/RoleC0_6/addcheck', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/preview')
+  } else {
+    res.redirect('/RoleC0_6/overseas2')
+  }
+})
+
+router.post('/RoleC0_6/attorney', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/name3')
+  } else {
+    res.redirect('/RoleC0_6/thirdparty0')
+  }
+})
+
+router.post('/RoleC0_6/addcheck2', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/preview_tp')
+  } else {
+    res.redirect('/RoleC0_6/overseas2b')
+  }
+})
+
+router.post('/RoleC0_6/overseascheck', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/postcode2')
+  } else {
+    res.redirect('/RoleC0_6/overseas0b')
+  }
+})
+
+
 
 module.exports = router
