@@ -624,9 +624,19 @@ router.post('/RoleC0_6/customerType', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_6/name')
+    res.redirect('/RoleC0_6/address')
   } else {
     res.redirect('/RoleC0_6/customer_third')
+  }
+})
+
+router.post('/RoleC0_6/altform', function (req, res) {
+  const type = req.session.data['type']
+
+  if (type === 'main') {
+    res.redirect('/RoleC0_6/altformatyes2')
+  } else {
+    res.redirect('/RoleC0_6/welsh')
   }
 })
 
@@ -654,7 +664,7 @@ router.post('/RoleC0_6/attorney', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_6/name3')
+    res.redirect('/RoleC0_6/address2')
   } else {
     res.redirect('/RoleC0_6/thirdparty0')
   }
