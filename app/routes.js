@@ -636,7 +636,7 @@ router.post('/RoleC0_6/altform', function (req, res) {
   if (type === 'main') {
     res.redirect('/RoleC0_6/altformatyes2')
   } else {
-    res.redirect('/RoleC0_6/welsh')
+    res.redirect('/RoleC0_6/Welsh')
   }
 })
 
