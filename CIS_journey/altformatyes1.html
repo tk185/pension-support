@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="altformat1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/altformatyes1-answer" method="post">
+
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+  {{ govukRadios({
+    idPrefix: "altformat-yes1",
+    name: "altformat-yes1",
+    fieldset: {
+      legend: {
+        text: "How do you want us to send your State Pension forecast?",
+        isPageHeading: true,
+        classes: "govuk-fieldset__legend--l"
+
+      }
+    },
+    hint: {
+      text: "Select one option"
+    },
+    items: [
+    {
+      value: "Large print",
+      text: "Large print",
+      checked: checked("altformat-yes1", "Large print")
+  },
+  {
+      value: "Coloured paper",
+      text: "Coloured paper",
+      checked: checked("altformat-yes1", "Coloured paper")
+  },
+  {
+      value: "Large print and coloured paper",
+      text: "Large print and coloured paper",
+      checked: checked("altformat-yes1", "Large print and coloured paper")
+  },
+  {
+      value: "Audio format (cassette, CD, DVD or MP3)",
+      text: "Audio format (cassette, CD, DVD or MP3)",
+      checked: checked("altformat-yes1", "Audio format (cassette, CD, DVD or MP3)")
+  },
+  {
+      value: "Braille",
+      text: "Braille",
+      checked: checked("altformat-yes1", "Braille")
+  },
+  {
+      value: "British Sign Language (Mpeg or DVD)",
+      text: "British Sign Language (Mpeg or DVD)",
+      checked: checked("altformat-yes1", "British Sign Language (Mpeg or DVD)")
+  },
+  {
+      value: "Something else",
+      text: "Something else",
+      checked: checked("altformat-yes1", "Something else")
+  }
+    ]
+  }) }}
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

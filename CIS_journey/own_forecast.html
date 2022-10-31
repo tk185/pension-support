@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/CIS_journey/how_can_help1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/ownforecast-answer" method="post">
+
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+  {{ govukRadios({
+    idPrefix: "own-forecast",
+    name: "own-forecast",
+    fieldset: {
+      legend: {
+        text: "Are you requesting your own forecast?",
+        isPageHeading: true,
+        classes: "govuk-fieldset__legend--l"
+
+      }
+    },
+    hint: {
+      text: "Select one option"
+    },
+    items: [
+    {
+      value: "Yes",
+      text: "Yes",
+      checked: checked("own-forecast", "CIS_journey/address")
+  },
+  {
+      value: "No",
+      text: "No",
+      checked: checked("own-forecast", "CIS_journey/appointee")
+  }
+
+    ]
+  }) }}
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
