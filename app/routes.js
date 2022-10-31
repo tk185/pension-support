@@ -691,5 +691,377 @@ router.post('/RoleC0_6/overseascheck', function (req, res) {
 })
 
 
+router.post('/NameNINO-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var NameNINO = req.session.data['Name-NINO']
+
+  // Check whether the variable matches a condition
+  if (NameNINO == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/how_can_help1')
+  }
+  if (NameNINO == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/NINOstart')
+  }
+})
+
+router.post('/howcanhelp1-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var howcanhelp1 = req.session.data['how_can_help1']
+
+  // Check whether the variable matches a condition
+  if (howcanhelp1 == "State Pension forecast"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/own_forecast')
+  }
+  if (howcanhelp1 == "Forecast enquiry"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/forecast1')
+  }
+})
+
+router.post('/ownforecast-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var ownforecast = req.session.data['own-forecast']
+
+  // Check whether the variable matches a condition
+  if (ownforecast == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/address')
+  }
+  if (ownforecast == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/appointee')
+  }
+})
+
+router.post('/address-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var addressfound = req.session.data['address-found']
+
+  // Check whether the variable matches a condition
+  if (addressfound == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/Welshlanguage')
+  }
+  if (addressfound == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/postcode')
+  }
+})
+
+router.post('/whichformat1-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var whichformat1 = req.session.data['which-format1']
+
+  // Check whether the variable matches a condition
+  if (whichformat1 == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformat2')
+  }
+  if (whichformat1 == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformat1')
+  }
+
+})
+
+router.post('/whichformat2-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var whichformat2 = req.session.data['which-format2']
+
+  // Check whether the variable matches a condition
+  if (whichformat2 == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformatyesWL')
+  }
+  if (whichformat2 == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/customer')
+  }
+
+})
+
+router.post('/altformatyes1-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var altformatyes1 = req.session.data['altformat-yes1']
+
+  // Check whether the variable matches a condition
+  if (altformatyes1 == "Large print"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprint')
+  }
+  if (altformatyes1 == "Coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/colouredpaper')
+  }
+  if (altformatyes1 == "Large print and coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprintcoloured')
+  }
+  if (altformatyes1 == "Braille"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/braille')
+  }
+  if (altformatyes1 == "Audio format (cassette, CD, DVD or MP3)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/audioformat')
+  }
+  if (altformatyes1 == "British Sign Language (Mpeg or DVD)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/BSL')
+  }
+  if (altformatyes1 == "Something else"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/somethingelse')
+  }
+})
+
+router.post('/altformatwelsh-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var altformatwelsh = req.session.data['altformat-welsh']
+
+  // Check whether the variable matches a condition
+  if (altformatwelsh == "Large print"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprintWL')
+  }
+  if (altformatwelsh == "Coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/colouredpaperWL')
+  }
+  if (altformatwelsh == "Large print and coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprintcolouredWL')
+  }
+  if (altformatwelsh == "Braille"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/brailleWL')
+  }
+  if (altformatwelsh == "Audio format (cassette, CD, DVD or MP3)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/audioformatWL')
+  }
+  if (altformatwelsh == "British Sign Language (Mpeg or DVD)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/BSLWL')
+  }
+  if (altformatwelsh == "Something else"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/somethingelseWL')
+  }
+})
+
+router.post('/whichformat-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var whichformat = req.session.data['which-format']
+
+  // Check whether the variable matches a condition
+  if (whichformat == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformatyes1')
+  }
+  if (whichformat == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/customer')
+  }
+
+})
+router.post('/NameNINO-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var NameNINO = req.session.data['Name-NINO']
+
+  // Check whether the variable matches a condition
+  if (NameNINO == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/how_can_help1')
+  }
+  if (NameNINO == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/NINOstart')
+  }
+})
+
+router.post('/howcanhelp1-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var howcanhelp1 = req.session.data['how_can_help1']
+
+  // Check whether the variable matches a condition
+  if (howcanhelp1 == "State Pension forecast"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/own_forecast')
+  }
+  if (howcanhelp1 == "Forecast enquiry"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/forecast1')
+  }
+})
+
+router.post('/ownforecast-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var ownforecast = req.session.data['own-forecast']
+
+  // Check whether the variable matches a condition
+  if (ownforecast == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/address')
+  }
+  if (ownforecast == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/appointee')
+  }
+})
+
+router.post('/address-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var addressfound = req.session.data['address-found']
+
+  // Check whether the variable matches a condition
+  if (addressfound == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/Welshlanguage')
+  }
+  if (addressfound == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/postcode')
+  }
+})
+
+router.post('/whichformat1-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var whichformat1 = req.session.data['which-format1']
+
+  // Check whether the variable matches a condition
+  if (whichformat1 == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformat2')
+  }
+  if (whichformat1 == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformat1')
+  }
+
+})
+
+router.post('/whichformat2-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var whichformat2 = req.session.data['which-format2']
+
+  // Check whether the variable matches a condition
+  if (whichformat2 == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformatyesWL')
+  }
+  if (whichformat2 == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/forecast1')
+  }
+
+})
+
+router.post('/altformatyes1-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var altformatyes1 = req.session.data['altformat-yes1']
+
+  // Check whether the variable matches a condition
+  if (altformatyes1 == "Large print"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprint')
+  }
+  if (altformatyes1 == "Coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/colouredpaper')
+  }
+  if (altformatyes1 == "Large print and coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprintcoloured')
+  }
+  if (altformatyes1 == "Braille"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/braille')
+  }
+  if (altformatyes1 == "Audio format (cassette, CD, DVD or MP3)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/audioformat')
+  }
+  if (altformatyes1 == "British Sign Language (Mpeg or DVD)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/BSL')
+  }
+  if (altformatyes1 == "Something else"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/somethingelse')
+  }
+})
+
+router.post('/altformatwelsh-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var altformatwelsh = req.session.data['altformat-welsh']
+
+  // Check whether the variable matches a condition
+  if (altformatwelsh == "Large print"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprintWL')
+  }
+  if (altformatwelsh == "Coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/colouredpaperWL')
+  }
+  if (altformatwelsh == "Large print and coloured paper"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/largeprintcolouredWL')
+  }
+  if (altformatwelsh == "Braille"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/brailleWL')
+  }
+  if (altformatwelsh == "Audio format (cassette, CD, DVD or MP3)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/audioformatWL')
+  }
+  if (altformatwelsh == "British Sign Language (Mpeg or DVD)"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/BSLWL')
+  }
+  if (altformatwelsh == "Something else"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/somethingelseWL')
+  }
+})
+
+router.post('/whichformat-answer', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var whichformat = req.session.data['which-format']
+
+  // Check whether the variable matches a condition
+  if (whichformat == "Yes"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/altformatyes1')
+  }
+  if (whichformat == "No"){
+    // Send user to next page
+    res.redirect('/RoleC0_6/forecast1')
+  }
+
+})
 
 module.exports = router
