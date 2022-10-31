@@ -614,7 +614,7 @@ router.post('/RoleC0_6/SRquestion', function (req, res) {
   const type = req.session.data['type']
 
   if (type === 'main') {
-    res.redirect('/RoleC0_6/altformat')
+    res.redirect('/RoleC0_6/Welshlanguage')
   } else {
     res.redirect('/RoleC0_6/dashSR')
   }
